@@ -1,12 +1,12 @@
 //  http
 var http = require("http");
 var fs = require('fs');
-// obteniendo informacion del entorno de ejecucion 
-//con respecto al ip y al puerto que debemos usar en nuestro server
-var PORT = process.env.PORT || 3000;
-var IP = process.env.IP || '127.0.0.1';
+var config = require("./config/config.js");
+// obteniendo las configuraciones del modulo de configuracion
+var PORT = config.PORT;
+var IP = config.IP;
 if(IP=='127.0.0.1'){
-    consol.log(">------Ejeccutando en modo local----");
+    console.log(">------Ejeccutando en modo local----");
 }
 
 // Crear un servidor basico
