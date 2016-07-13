@@ -1,14 +1,16 @@
-var color = "honedew"
+var color = "cadetblue"
 function hola(){
-    alert("> Bienvenido a esta pagina ...");
+    
+    sweetAlert("Worl places","¡Bienvenido a esta pagina!");
+    document.body.style.backgroundColor = "lightseagreen"
 }
 function  changeBkgColor(element, color) {
     var color = document.body.style.backgroundColor;
     console.log("> Color original: "+ color);
-    if(color == "lighseagreen"){
-        color = "honeydew";
+    if(color == "lightseagreen"){
+        color = "cadetblue";
     }else{
-        color = "lighseagreen";
+        color = "lightseagreen";
     }
     console.log("> Cambiando color a" + color);
     document.body.style.backgroundColor = color;
