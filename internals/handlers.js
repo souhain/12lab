@@ -15,5 +15,19 @@ module.exports = {
         var jsonResponse = JSON.stringify(objetoRespuesta);
         // Envio la respues al cliente
         res.end(jsonResponse);
+    },
+    "/getfortune" : function (req, res) {
+        // se obtiene el mensaje de la suerte
+        var fortunePaper = {
+            "mensaje" : "La honestidad es un regalo caro, no lo esperes de gente barata"
+            };
+            //Se configura el encabezado  de respuesta HTTP
+            res.writeHead(200,{
+                "content-Type" : "application/json"
+            });
+            // Parseando a string el objetoRespuesta de respuesta
+            var jsonResponse = JSON.stringify(fortunePaper);
+            // respondemos el objeto
+            res.end(jsonResponse);
     }
 };
