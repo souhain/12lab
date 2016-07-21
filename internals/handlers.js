@@ -1,4 +1,5 @@
 // Manejadores de rutas virtuales
+var fortune = require("./fortune");
 var fechaDeNacimiento = new Date(1992,07,03,3,00);
 module.exports = {
     "/edad/edgar-paredes": function (req, res) {
@@ -18,15 +19,18 @@ module.exports = {
     },
     "/getfortune" : function (req, res) {
         // se obtiene el mensaje de la suerte
-        var fortunePaper = {
-            "mensaje" : "La honestidad es un regalo caro, no lo esperes de gente barata"
-            };
+        //var fortunePaper = {
+            //"mensaje" : "La honestidad es un regalo caro, no lo esperes de gente barata"
+            //};
+            // Parseando a string el objetoRespuesta de respuesta
+           // var jsonResponse = JSON.stringify(fortunePaper);
+            fortune.getFortune(function (fortunePaper) {
+                
             //Se configura el encabezado  de respuesta HTTP
             res.writeHead(200,{
                 "content-Type" : "application/json"
             });
-            // Parseando a string el objetoRespuesta de respuesta
-            var jsonResponse = JSON.stringify(fortunePaper);
+            });
             // respondemos el objeto
             res.end(jsonResponse);
     }
