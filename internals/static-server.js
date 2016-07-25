@@ -2,6 +2,7 @@
 var fs = require('fs'),
     config = require('../config/config.js'),
     mime = require('mime');
+    
 // Exportar la funcion de Servidor Estatico
 exports.serve = function (url, res) {
     //acompletar el static-path
@@ -11,7 +12,6 @@ exports.serve = function (url, res) {
     fs.exists(filePath, function (exists) {
         console.log("> Exists: " + exists);
         if (exists) {
-            console.log("> El archivo existe");
             //sirvo el archivo
             fs.readFile(filePath, function (err, content) {
                 if (err) {
@@ -21,6 +21,7 @@ exports.serve = function (url, res) {
                         'contentType': 'text/html',
                         'Server': 'PilgrimHawks@2.1.2'
                     });
+
                     res.end("<h1>Error 500: Recurson Dañado</h1>");
                 }
                 else {
@@ -37,7 +38,6 @@ exports.serve = function (url, res) {
             });
         }
         else {
-            console.log("> El archivo no existe");
             // Mando un codigo 404
             res.writeHead(404, {
                 'content-Type': 'text/html',

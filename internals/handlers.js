@@ -33,6 +33,7 @@ module.exports = {
             res.writeHead(200,{
                 "Content-Type" : "application/json"
             });
+            console.log("contestando: " + fortunePaper);
             // Respondemos el Objeto
             res.end(fortunePaper);
         });

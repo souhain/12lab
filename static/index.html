@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./vendor/css/bg.css">
     <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
-    <title></title>
-    <!--contenido-->
-    <h1>Fortune Construction</h1>
-    <div id="title">
-    <p>¡si tu fortuna quieres saber,
-         la galleta de la suerte debes romper!
-    </p>
+    
+    <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="./vendor/materialize/dist/css/materialize.css"  media="screen,projection"/>  
+           
     </div>
-        <div id="cookie">
-            <button onclick="getFortuneFromServer()">ROMPE LA GALLETA</button></div>
-    <h2>Under Construction</h2>
+    <title>Galletas en reparacion</title>
+</head>
+
+<body>
+    
+    <!--contenido-->
+    <h1 class="center-align">Fortune Cookie</h1>
+       <div class="card-panel teal grey"></div>
+    <div id="title">
+        <h5 class="center-align" >
+            ¡si tu fortuna quieres saber, la galleta de la suerte debes romper!
+        </h5>
+    </div>
+     <center><img  src="./img/galleta.jpg" width="150" height="200" alt="En construccion"></center>
+    <div id="cookie">
+        <center><a class="waves-effect light-blue lighten-1 btn" class="center-align" width="150" height="200"  onclick="getFortuneFromServer()">
+                ROMPE LA GALLETA
+                </a></center>
+                <div class="card-panel teal black"></div>
+    </div>
+    <h2 class="center-align" class="flow-text">Under Construction</h2>
     <div id="status">
-        <img src="./img/reparacion.jpg"
-        alt="en construccion">
+        <center><img  src="./img/reparacion.jpg" alt="En construccion"></center>
     </div>
     <!-- Seccion de scripts -->
     <script src="./vendor/jquery/dist/jquery.js"></script>
     <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
-    <script src = "./js/site.js"></script>
+    <script src="./vendor/materialize/dist/js/materialize.min.js"></script> 
+    <script src="./js/site.js"></script>
 </body>
+
 </html>
+
+ 
+            
