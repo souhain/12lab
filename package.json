@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rivalcoba/lab02-static-server.git"
+    "url": "git+https://github.com/souhain/12lab.git"
   },
   "keywords": [
     "node",
     "static-server",
     "web"
   ],
-  "author": "@rivalcoba",
+  "author": "edgarparedes@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rivalcoba/lab02-static-server/issues"
+    "url": "https://github.com/souhain/12lab/issues"
   },
-  "homepage": "https://github.com/rivalcoba/lab02-static-server#readme",
+  "homepage": "https://github.com/souhain/12lab#readme",
   "dependencies": {
     "colors": "^1.1.2",
     "mime": "^1.3.4",

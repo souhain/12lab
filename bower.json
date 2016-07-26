@@ -1,9 +1,9 @@
 {
-  "name": "lab02-static-server",
+  "name": "12lab",
   "description": "Servidor Web estatico en node",
   "main": "server.js",
   "authors": [
-    "@rivalcoba"
+    "edgarparedes283@gmail.com"
   ],
   "license": "ISC",
   "keywords": [
@@ -11,7 +11,7 @@
     "static-server",
     "web"
   ],
-  "homepage": "https://github.com/rivalcoba/lab02-static-server",
+  "homepage": "https://github.com/souhain/12lab.git",
   "private": true,
   "ignore": [
     "**/.*",
