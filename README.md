@@ -1,2 +1,2 @@
-# 12lab
-Servidor web estático creado para la materia de programación web moderna ITGAM/TecNM 
+# lab02-static-server
+Servidor Web Estático creado para la materia de Programacion Web Moderna del ITGAM/TecNM

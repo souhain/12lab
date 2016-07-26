@@ -3,45 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./vendor/css/bg.css">
+    <!-- Import GOOGLE ICON FONT FAMILY -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Para importar localmente 
+    http://stackoverflow.com/questions/31283977/material-design-lite-fonts-and-icons -->
+    <!-- Import Materialize -->
+    <link rel="stylesheet" href="./vendor/materialize/bin/materialize.css">
     <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
-    
-    <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="./vendor/materialize/dist/css/materialize.css"  media="screen,projection"/>  
-           
-    </div>
-    <title>Galletas en reparacion</title>
+    <title>Galletas de la suerte</title>
 </head>
 
-<body>
+<body background="img/china.jpg">
     
-    <!--contenido-->
-    <h1 class="center-align">Fortune Cookie</h1>
-       <div class="card-panel teal grey"></div>
-    <div id="title">
-        <h5 class="center-align" >
-            ¡si tu fortuna quieres saber, la galleta de la suerte debes romper!
-        </h5>
-    </div>
-     <center><img  src="./img/galleta.jpg" width="150" height="200" alt="En construccion"></center>
-    <div id="cookie">
-        <center><a class="waves-effect light-blue lighten-1 btn" class="center-align" width="150" height="200"  onclick="getFortuneFromServer()">
-                ROMPE LA GALLETA
-                </a></center>
-                <div class="card-panel teal black"></div>
-    </div>
-    <h2 class="center-align" class="flow-text">Under Construction</h2>
-    <div id="status">
-        <center><img  src="./img/reparacion.jpg" alt="En construccion"></center>
-    </div>
-    <!-- Seccion de scripts -->
-    <script src="./vendor/jquery/dist/jquery.js"></script>
-    <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./vendor/materialize/dist/js/materialize.min.js"></script> 
-    <script src="./js/site.js"></script>
+    <!-- Contenido -->
+    <nav>
+        <div class="nav-wrapper black ">
+            <a href="#" class="dark-logo">
+                <h1 class="center blue-text">
+                    GALLETA DE LA SUERTE
+                </h1>
+            </a>
+        </div>
+        <div class="card-panel blue-grey darken-4">
+            
+    </nav>
+    <br><br><br>
+    <center>
+        <img src="img/galleta.jpg" width="200" height="190" ><div class="card-panel blue-grey darken-3">
+    </center>
+    <div class="card-panel blue-grey darken-2"></div>
+    <div class="center">
+        <a onclick="getFortuneFromServer()" class="waves-effect black btn-large">
+            <i class="large material-icons left"></i> ROMPER
+        </a>
+              <div class="card-panel blue-grey darken-1"></div>
+      
+
+        <!-- Seccion de Scripts -->
+        <script src="./vendor/jquery/dist/jquery.min.js"></script>
+        <script src="./vendor/materialize/bin/materialize.js"></script>
+        <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="./js/site.js"></script>
 </body>
 
 </html>
-
- 
-            

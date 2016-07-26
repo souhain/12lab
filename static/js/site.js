@@ -1,12 +1,13 @@
-function getFortuneFromServer() {
-    // Realizando la solicitud get ajax
-    $.get("/getfortune", "", function (data, status) {
-        console.log("> " + typeof (data));
-        Console.log("> Estatus de respuesta: " + status);
+function getFortuneFromServer(){
+    // Realizando la solicitud get en AJAX
+    $.get("/getfortune","", function(data, status){
+        console.log("> " +  typeof(data));
+        console.log("> Estatus de respuesta: " + status);
         swal({
             title: "¡TU FORTUNA!",
-            text: data.mensaje,
+            text: data.message,
             imageUrl: "img/suerte.jpg"
         });
-    }, "json");
+    },"json");
 }
+
