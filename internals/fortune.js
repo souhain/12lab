@@ -36,6 +36,8 @@ module.exports = {
                 // Parseo el objeto resultado en un arreglo
                 objetoRestultado.toArray(function(err, papers){
                     var fortunePaperResponse = 
+                    // obntengo un indice aleatorio de 0 a 1
+                    // Math.floor redondea para que obtengamos un numero entero y acceda al arreglo
                     JSON.stringify(papers[Math.floor(Math.random() * papers.length)]);
                     // Cerrar la conexion entre el cliente
                     // y la base de datos
